@@ -1,0 +1,99 @@
+// Hero ----------------------------------------
+#hero{
+    background-color: $colorPrimaryLight;
+    padding: 5rem 0;
+
+    .row{
+        align-items: center;
+    }
+
+    &Text{
+        line-height: 3.6rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+// Feature ----------------------------------------
+#feature{
+    .singleFeature{
+        padding: 5rem 1rem;
+        text-align: center;
+        background-color: $colorPrimaryUltraLight;
+        border-radius: 1rem;
+        transition: all .3s ease;
+
+        img{
+            height: 8rem;
+            width: auto;
+        }
+
+        h3{
+            margin: 2.5rem 0 1rem 0;
+            text-align: center;
+        }
+
+        p{
+            color: $colorDark;
+        }
+
+        &:hover{
+            background-color: #fff;
+            box-shadow: 0 2rem 4rem 0 rgba(#000, .1);
+        }
+    }
+}
+
+
+// Testimonial ----------------------------------------
+#courses{
+    .singleCourse{
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 1rem 2rem 0 rgba(#000, .1);
+        transition: all .3s ease;
+
+        &:hover{
+            box-shadow: 0 2rem 4rem 0 rgba(#000, .2);
+            transform: translateY(-.2rem);
+        }
+
+        h3{
+            margin: 2rem 0 .5rem 0;
+        }
+
+        .courseDescription{
+            margin-bottom: 3rem;
+            color: $colorDark;
+        }
+
+        .row{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 3.5rem;
+            align-items: center;
+            justify-content: space-between;
+
+            img{
+                height: 2rem;
+                width: auto;
+            }
+        }
+    }
+}
+
+
+// Testimonial ----------------------------------------
+#testimonial{
+    .singleTestimonial{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+    }
+}

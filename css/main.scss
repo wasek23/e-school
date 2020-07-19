@@ -1,0 +1,138 @@
+// Google Fonts ----------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+// Variables ----------------------------------------
+// Colors
+$colorPrimary: #21B573;
+$colorPrimaryLight: #F0FFF0;
+$colorPrimaryUltraLight: #F8FFFB;
+
+$colorSecondary: #413960;
+$colorSecondaryLight: #56548C;
+
+$colorBackground: #E5E5E5;
+
+$colorRed: #FD511A;
+
+$colorDark: #585859;
+$colorDark2: #6C6B6B;
+
+
+// Base ----------------------------------------
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    // This defines what 1rem is
+    font-size: 62.5%; // 1rem = 10px.
+    scroll-behavior: smooth;
+    
+    @media only screen and (max-width: 62em){
+        font-size: 56.25%; // 1rem = 9px.
+    }
+}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+::selection{
+    background-color: $colorPrimary;
+    color: #fff;
+}
+
+section{
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+
+// Typography ----------------------------------------
+@import '../sass/typography';
+
+
+// Header ----------------------------------------
+#header{
+    background-color: $colorPrimaryLight;
+    box-shadow: 0 0 1rem 0 rgba($colorPrimary, .2);
+    
+    .logo{
+        img{
+            height: 6rem;
+            width: auto;
+        }
+    }
+
+    .navbar-toggler{
+        font-size: 2rem;
+        border-color: $colorPrimary;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .navbar-nav{
+        li{
+            padding: .5rem 1rem;
+
+            a{
+                color: #000;
+                font-size: 1.6rem;
+
+                &:hover{
+                    color: $colorPrimary;
+                }
+            }
+
+            .active{
+                color: $colorPrimary;
+            }
+        }
+
+        .dropdown-menu{
+            background-color: rgba($colorPrimaryLight, .5);
+            border-color: $colorPrimary;
+        }
+    }
+
+    .btn{
+        padding: .7rem 2.2rem;
+    }
+}
+
+
+// Sections ----------------------------------------
+@import '../sass/sections';
+
+
+// Footer ----------------------------------------
+#footer{
+    background-color: #282531;
+    color: #fff;
+
+    ul{
+        list-style-type: none;
+
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+
+        &:hover{
+            text-decoration: none;
+            color: $colorPrimary;
+        }
+    }
+}
