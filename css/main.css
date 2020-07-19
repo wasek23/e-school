@@ -264,7 +264,7 @@ img {
   width: auto;
 }
 
-#testimonial .singleTestimonial {
+#testimonials .singleTestimonial {
   width: 75%;
   margin: 0 auto;
   display: -webkit-box;
@@ -275,7 +275,7 @@ img {
           align-items: center;
 }
 
-#testimonial .singleTestimonial img {
+#testimonials .singleTestimonial img {
   max-width: 150px;
   max-height: 150px;
 }
