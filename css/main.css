@@ -188,9 +188,10 @@ img {
           align-items: center;
 }
 
-#heroText {
+#hero .heroText {
   line-height: 3.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  color: #6C6B6B;
 }
 
 #feature .singleFeature {
@@ -244,6 +245,9 @@ img {
 
 #courses .singleCourse .courseDescription {
   margin-bottom: 3rem;
+}
+
+#courses .singleCourse p {
   color: #585859;
 }
 

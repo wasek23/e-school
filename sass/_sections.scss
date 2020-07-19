@@ -7,9 +7,10 @@
         align-items: center;
     }
 
-    &Text{
+    .heroText{
         line-height: 3.6rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
+        color: $colorDark2;
     }
 }
 
@@ -64,6 +65,9 @@
 
         .courseDescription{
             margin-bottom: 3rem;
+        }
+
+        p{
             color: $colorDark;
         }
 
