@@ -5,6 +5,7 @@
 
 ### Main Featured:
 * Fully Responsive Web Template.
+* Contact Form.
 
 ### Technology Used:
 * HTML5, CSS3, Bootstrap, SASS, JavaScript.

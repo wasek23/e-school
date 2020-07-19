@@ -58,9 +58,22 @@ h2 {
   font-size: 3.6rem;
   line-height: 5.6rem;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 5rem;
   color: #413960;
+  position: relative;
+  padding-bottom: .5rem;
+}
+
+h2::before {
+  content: '';
+  width: 12rem;
+  height: .5rem;
+  background-color: #21B573;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 h3 {
@@ -265,6 +278,11 @@ img {
 #testimonial .singleTestimonial img {
   max-width: 150px;
   max-height: 150px;
+}
+
+.form-control {
+  font-size: 1.6rem;
+  padding: .5rem 1rem;
 }
 
 #footer {

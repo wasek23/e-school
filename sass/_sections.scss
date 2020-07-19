@@ -84,16 +84,23 @@
 
 
 // Testimonial ----------------------------------------
-#testimonial{
+#testimonials{
     .singleTestimonial{
         width: 75%;
         margin: 0 auto;
         display: flex;
         align-items: center;
-
+        
         img{
             max-width: 150px;
             max-height: 150px;
         }
     }
+}
+
+
+// Contact ----------------------------------------
+.form-control{
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
 }

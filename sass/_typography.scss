@@ -16,9 +16,21 @@ h2{
     font-size: 3.6rem;
     line-height: 5.6rem;
     font-weight: bold;
-    text-align: center;
     margin-bottom: 5rem;
     color: $colorSecondary;
+    position: relative;
+    padding-bottom: .5rem;
+
+    &::before{
+        content: '';
+        width: 12rem;
+        height: .5rem;
+        background-color: $colorPrimary;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 h3{
